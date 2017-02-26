@@ -1,3 +1,16 @@
-<h1>
-  {{title}} blah
+<body fullscreen>
+<div class="page">
+<h1 class="title">
+  {{title}}
 </h1>
+<ul class="menu">
+	<li><a routerLink='aboutme'>About Me</a></li>
+	<li><a routerLink='resume'>Resume</a></li>
+	<li><a routerLink='work'>Work</a></li>
+	<li><a routerLink='laugh'>Laugh</a></li>
+</ul>
+<div class="container">
+	<router-outlet></router-outlet>
+</div>
+</div>
+</body>

@@ -1,0 +1,14 @@
+<div ng-click='check(count)'>
+<br>
+<div class = "size">
+<h2>{{slideContent.company}}</h2>
+<br>
+<h3>{{slideContent.Date}}</h3>
+<ul *ngFor="let duty of slideContent.duties">
+<li>{{duty}}</li>
+</ul>
+</div>
+<button (click)="cycle(-1)">back</button>
+<button (click)="cycle(1)">next</button>
+
+</div>
