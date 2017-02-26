@@ -12,9 +12,9 @@ export class WorkxpComponent implements OnInit {
 
   ngOnInit() {
   this.samples = [
-    	{language:'d3js',works:['https://github.com/st4rgut22/mybiography/blob/master/src/assets/images/epa.gif','/assets/images/pets.gif']},
-  		{language:'js',works:['/assets/images/light.gif','/assets/images/rot.gif']},
-  		{language:'html',works:['/assets/images/coop.gif','/assets/images/juno.gif']}
+    	{language:'d3js',works:['./assets/images/epa.gif','./assets/images/pets.gif']},
+  		{language:'js',works:['./assets/images/light.gif','./assets/images/rot.gif']},
+  		{language:'html',works:['./assets/images/coop.gif','./assets/images/juno.gif']}
   		];
 
   };
