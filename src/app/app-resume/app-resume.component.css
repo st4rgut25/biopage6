@@ -1,6 +1,11 @@
 h2,h3{
 	margin:0px;
 }
-.size{
-	height:200px;
+h2{
+	background-color: yellow;
+	padding:2px;
+}
+button{
+	border-radius:10%;
+	background-color: white;
 }

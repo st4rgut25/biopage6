@@ -1,9 +1,25 @@
-import {Component, Pipe, PipeTransform} from '@angular/core';
+import {Component, trigger, state, style, transition, animate} from '@angular/core';
 @Component({
 	selector: 'my-app',
-	templateUrl: 'laugh.component.html',
+	template: `
+	 <div [ngStyle]="{'display':'inline-block','padding':'5px'}" *ngFor='let topicName of demo; let t = index'>
+ 	<span>
+ 	{{topicName.topic}}
+ 	</span>
+	  <table *ngFor='let insideQ of topicName.question; let q = index'>
+		  <tr (click)="reveal($event,t,q)">
+			  <td>
+			  {{insideQ}}
+			  </td>
+		  </tr>
+	  </table>
+  </div>
+  `
+	,
 	styleUrls: ['./laugh.component.css']
-})
+	})
+
+
 export class LaughComponent { 
 
   demo = [

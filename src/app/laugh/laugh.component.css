@@ -3,9 +3,11 @@ table{
 	border:5px solid #fff;
 }
 td{
+	padding:10px;
 	height:100px;
 	width:200px;
 	color:white;
+	cursor:pointer;
 }
 span{
 	font-size:20px;
